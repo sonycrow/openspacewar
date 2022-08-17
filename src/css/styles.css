@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'boogaloo';
+    src: url("../assets/fonts/boogaloo-r.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'tournedos';
+    src: url('../assets/fonts/tournedos.otf');
+}
+
+.card {
+    position: relative;
+    width: 1296px;
+    height: 1728px;
+    margin: 0;
+}
+
+.card .template {
+    width: 100%;
+}
+
+.card div.elements,
+.card div.elements-nr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/elements.png);
+}
+
+.card div.elements-nr {
+    background-image: url(../assets/images/elements_nr.png);
+}
+
+.card div {
+    color: white;
+}
+
+.card div.universe {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    width: 95px;
+    height: 40px;
+    opacity: 0.6;
+    box-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 20px #000, 0 0 20px #000;
+    background-size: contain;
+}
+
+.card div.cardnumber {
+    position: absolute;
+    top: 790px;
+    left: 1220px;
+    font-family: 'arial', serif;
+    font-weight: bold;
+    font-size: 24px;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
+    color: black;
+    white-space: nowrap;
+}
+
+.card div.cost,
+.card div.attack,
+.card div.defense {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-family: 'arial', serif;
+    font-weight: bold;
+}
+
+.card div.cost {
+    top: 92px;
+    left: 78px;
+    width: 194px;
+    height: 160px;
+    font-size: 160px;
+    line-height: 156px;
+}
+
+.card div.costrequired {
+    position: absolute;
+    top: 80px;
+    left: 248px;
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(45deg);
+}
+
+.card div.costrequired-science {
+    background-image: url(src/assets/elements/science-ns.png);
+}
+.card div.costrequired-mutant {
+    background-image: url(src/assets/elements/mutant-ns.png);
+}
+.card div.costrequired-tech {
+    background-image: url(src/assets/elements/tech-ns.png);
+}
+.card div.costrequired-warrior {
+    background-image: url(src/assets/elements/warrior-ns.png);
+}
+.card div.costrequired-cosmic {
+    background-image: url(src/assets/elements/cosmic-ns.png);
+}
+.card div.costrequired-mystic {
+    background-image: none;
+}
+
+.card div.class {
+    position: absolute;
+    top: 1533px;
+    left: 1101px;
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card div.class-science {
+    background-image: url(src/assets/elements/science-e.png);
+}
+.card div.class-mutant {
+    background-image: url(src/assets/elements/mutant-e.png);
+}
+.card div.class-tech {
+    background-image: url(src/assets/elements/tech-e.png);
+}
+.card div.class-warrior {
+    background-image: url(src/assets/elements/warrior-e.png);
+}
+.card div.class-cosmic {
+    background-image: url(src/assets/elements/cosmic-e.png);
+}
+.card div.class-mystic {
+    background-image: url(src/assets/elements/mystic-e.png);
+}
+
+.card div.attack,
+.card div.defense {
+    font-size: 110px;
+    left: 1078px;
+    width: 130px;
+    height: 110px;
+    line-height: 110px;
+}
+
+.card div.attack {
+    top: 148px;
+}
+
+.card div.defense {
+    top: 330px;
+}
+
+.card div.title {
+    position: absolute;
+    width: 1296px;
+    top: 26px;
+    font-family: 'tournedos', serif;
+    font-size: 126px;
+    text-align: center;
+    color: white;
+    padding-left: 55px;
+    text-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 20px #000, 0 0 20px #000;
+}
+
+.card div.subtitle {
+    position: absolute;
+    width: 1296px;
+    top: 164px;
+    font-size: 60px;
+    font-family: 'tournedos', serif;
+    text-align: center;
+    color: white;
+    padding-left: 55px;
+    text-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 20px #000, 0 0 20px #000;
+}
+
+.card div.skill-vanguard,
+.card div.skill-rearguard,
+.card div.skill-special {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 93px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card div.skill-vanguard {
+    top: 941px;
+}
+
+.card div.skill-rearguard {
+    top: 1135px;
+}
+
+.card div.skill-special {
+    top: 1326px;
+}
+
+.card div.skill-active {
+    background-image: url(src/assets/elements/active.png);
+}
+
+.card div.skill-pasive {
+    background-image: url(src/assets/elements/pasive.png);
+}
+
+.card div.skill-text {
+    position: absolute;
+    width: 940px;
+    height: 150px;
+    left: 287px;
+    display: table;
+}
+
+.card div.skill-text div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card div.skill-text div div {
+    font-size: 44px;
+    font-family: 'boogaloo', serif;
+    vertical-align: middle;
+    line-height: 54px;
+    color: black;
+    text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
+}
+
+.card div.skill-text-vanguard {
+    top: 935px;
+}
+
+.card div.skill-text-rearguard {
+    top: 1127px;
+}
+
+.card div.skill-text-special {
+    top: 1319px;
+}
+
+.card span.skill {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: 'boogaloo', serif;
+    border: 5px solid black;
+    border-radius: 12px;
+    color: black;
+    background-color: white;
+    padding: 0 5px 0 4px;
+    white-space: nowrap;
+    text-shadow: none;
+}
+
+.card span.trait {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: 'boogaloo', serif;
+    border: 4px solid white;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+    padding: 0 5px 0 4px;
+    white-space: nowrap;
+    text-shadow: none;
+}
+
+.card div.skill-text div div span.ko,
+.card div.skill-text div div span.atk,
+.card div.skill-text div div span.def,
+.card div.skill-text div div span.tech,
+.card div.skill-text div div span.science,
+.card div.skill-text div div span.mutant,
+.card div.skill-text div div span.cosmic,
+.card div.skill-text div div span.warrior,
+.card div.skill-text div div span.mystic {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 14px 8px 14px 8px;
+    margin: 0 -14px 0 -14px;
+    font-size: 50px;
+    display: inline-block;
+}
+
+.card div.skill-text div div span.ko {
+    margin: 0 -4px 0 -4px;
+    background-image: url(src/assets/elements/ko.png);
+}
+
+.card div.skill-text div div span.atk {
+    background-image: url(src/assets/elements/atk.png);
+}
+
+.card div.skill-text div div span.def {
+    background-image: url(src/assets/elements/def.png);
+}
+
+.card div.skill-text div div span.tech {
+    background-image: url(src/assets/elements/tech.png);
+    margin: 0 -10px 0 -10px;
+}
+
+.card div.skill-text div div span.science {
+    background-image: url(src/assets/elements/science.png);
+}
+
+.card div.skill-text div div span.mutant {
+    background-image: url(src/assets/elements/mutant.png);
+    margin: 0 -22px 0 -22px;
+}
+
+.card div.skill-text div div span.warrior {
+    background-image: url(src/assets/elements/warrior.png);
+}
+
+.card div.skill-text div div span.cosmic {
+    background-image: url(src/assets/elements/cosmic.png);
+}
+
+.card div.skill-text div div span.mystic {
+    background-image: url(src/assets/elements/mystic.png);
+}
+
+.card div.skills-traits {
+    position: absolute;
+    width: 1030px;
+    left: 60px;
+}
+
+.card div.skills {
+    top: 1548px;
+}
+
+.card div.traits {
+    top: 1610px;
+}
+
+.card div.skills-traits span {
+    margin-right: 5px;
+}
+
+#cards img {
+    width: 400px;
+}

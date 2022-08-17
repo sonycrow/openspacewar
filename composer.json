@@ -1,0 +1,22 @@
+{
+    "name": "sonycrow/openspacewar",
+    "version": "1.0.0",
+    "description": "OpenSpaceWar",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Sonycrow",
+            "email": "sonyhq@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers",
+            "src/sections"
+        ]
+    }
+}

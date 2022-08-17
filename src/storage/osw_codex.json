@@ -1,0 +1,175 @@
+{
+    "card": [
+        {
+            "set": "cb",
+            "number": "001",
+            "rarity": "common",
+            "name": {
+                "es": "",
+                "en": ""
+            },
+            "subname": {
+                "es": "",
+                "en": ""
+            },
+            "type": "base",
+            "class": "technologic",
+            "cost": 0,
+            "atk": 0,
+            "def": 20,
+            "trait": ["base"],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "special": {
+                "type": "active",
+                "cost": 0,
+                "desc": {
+                    "es": "Durante tu turno, puedes relanzar una energía.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "002",
+            "rarity": "common",
+            "name": {
+                "es": "",
+                "en": ""
+            },
+            "subname": {
+                "es": "",
+                "en": ""
+            },
+            "type": "base",
+            "class": "biologic",
+            "cost": 0,
+            "atk": 0,
+            "def": 20,
+            "trait": ["base"],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "special": {
+                "type": "active",
+                "cost": 0,
+                "desc": {
+                    "es": "Durante tu turno, puedes incrementar el valor de una energía en 1.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "003",
+            "rarity": "common",
+            "name": {
+                "es": "",
+                "en": ""
+            },
+            "subname": {
+                "es": "",
+                "en": ""
+            },
+            "type": "base",
+            "class": "espectral",
+            "cost": 0,
+            "atk": 0,
+            "def": 20,
+            "trait": ["base"],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "special": {
+                "type": "active",
+                "cost": 0,
+                "desc": {
+                    "es": "Durante tu turno, puedes robar una carta. Si lo haces, debes descartar una carta.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "004",
+            "rarity": "common",
+            "name": {
+                "es": "",
+                "en": ""
+            },
+            "subname": {
+                "es": "",
+                "en": ""
+            },
+            "type": "base",
+            "class": "dimensional",
+            "cost": 0,
+            "atk": 0,
+            "def": 20,
+            "trait": ["base"],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "special": {
+                "type": "active",
+                "cost": 0,
+                "desc": {
+                    "es": "Todo el daño recibido en tu base, se reduce en 1.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "005",
+            "rarity": "common",
+            "name": {
+                "es": "",
+                "en": ""
+            },
+            "subname": {
+                "es": "",
+                "en": ""
+            },
+            "type": "unit",
+            "class": "technological",
+            "cost": 5,
+            "atk": 5,
+            "def": 5,
+            "trait": ["spaceship"],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "vanguard": {
+                "type": "pasive",
+                "cost": 6,
+                "desc": {
+                    "es": "",
+                    "en": ""
+                }
+            },
+            "rearguard": {
+                "type": "pasive",
+                "cost": 6,
+                "desc": {
+                    "es": "",
+                    "en": ""
+                }
+            },
+            "flash": {
+                "type": "active",
+                "cost": 6,
+                "desc": {
+                    "es": "",
+                    "en": ""
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,191 @@
+{
+    "skill": [
+        {
+            "code": "precision",
+            "name": {
+                "en": "precision",
+                "es": "precisión"
+            },
+            "desc": {
+                "en": "",
+                "es": "Una unidad con {precision} puede atacar a cualquier objetivo del campo."
+            }
+        },
+        {
+            "code": "critical",
+            "name": {
+                "en": "critical",
+                "es": "crítico"
+            },
+            "desc": {
+                "en": "",
+                "es": "Las cartas de vida robadas con un golpe crítico no van a la mano, van a la zona de #ko#."
+            }
+        },
+        {
+            "code": "firstattack",
+            "name": {
+                "en": "first attack",
+                "es": "ataca primero"
+            },
+            "desc": {
+                "en": "",
+                "es": "Una unidad con {firststrike} resuelve primero su daño de ataque durante el combate. Si el oponente no ha quedado #ko#, entonces se resuelve el daño del defensor y el resto del combate de la forma normal."
+            }
+        },
+        {
+            "code": "doublestrike",
+            "name": {
+                "en": "double strike",
+                "es": "golpea dos veces"
+            },
+            "desc": {
+                "en": "",
+                "es": "El personaje realiza 2 ataques completos, resolviendo toda la fase de combate 2 veces."
+            }
+        },
+        {
+            "code": "block",
+            "name": {
+                "en": "block",
+                "es": "bloquear"
+            },
+            "desc": {
+                "en": "",
+                "es": "El personaje con {block} toma el relevo del personaje original atacado, aunque no esté en su misma línea. El nuevo objetivo hay que declararlo antes de pasar a la fase de combate."
+            }
+        },
+        {
+            "code": "stun",
+            "name": {
+                "en": "stun",
+                "es": "aturdir"
+            },
+            "desc": {
+                "en": "",
+                "es": ""
+            }
+        },
+        {
+            "code": "fly",
+            "name": {
+                "en": "fly",
+                "es": "volar"
+            },
+            "desc": {
+                "en": "",
+                "es": "Un personaje con {fly} puede atacar a los personajes de retaguardia aunque haya personajes en la vanguardia."
+            }
+        },
+        {
+            "code": "barrier",
+            "name": {
+                "en": "barrier",
+                "es": "barrera"
+            },
+            "desc": {
+                "en": "",
+                "es": ""
+            }
+        },
+        {
+            "code": "reach",
+            "name": {
+                "en": "reach",
+                "es": "alcance"
+            },
+            "desc": {
+                "en": "",
+                "es": "Un personaje con {reach} defiende los ataques de personajes con {fly} estando en vanguardia."
+            }
+        },
+        {
+            "code": "haste",
+            "name": {
+                "en": "haste",
+                "es": "prisa"
+            },
+            "desc": {
+                "en": "",
+                "es": "Un personaje con {haste} puede atacar el mismo turno en el que entra en juego."
+            }
+        },
+        {
+            "code": "indestructible",
+            "name": {
+                "en": "indestructible",
+                "es": "indestructible"
+            },
+            "desc": {
+                "en": "",
+                "es": ""
+            }
+        },
+        {
+            "code": "fury",
+            "name": {
+                "en": "fury",
+                "es": "furia"
+            },
+            "desc": {
+                "en": "",
+                "es": ""
+            }
+        },
+        {
+            "code": "taunt",
+            "name": {
+                "en": "taunt",
+                "es": "provocar"
+            },
+            "desc": {
+                "en": "",
+                "es": "Los personajes atacantes están obligados a atacar al personaje con {taunt} aunque no esté en su misma línea. Si hay varios personajes con {taunt}, el atacante decide a quien dirige el ataque."
+            }
+        },
+        {
+            "code": "trample",
+            "name": {
+                "en": "trample",
+                "es": "arrollar"
+            },
+            "desc": {
+                "en": "",
+                "es": ""
+            }
+        },
+        {
+            "code": "shield",
+            "name": {
+                "en": "shield",
+                "es": "escudo"
+            },
+            "desc": {
+                "en": "",
+                "es": ""
+            }
+        },
+        {
+            "code": "counterattack",
+            "name": {
+                "en": "counter attack",
+                "es": "contraataque"
+            },
+            "desc": {
+                "en": "",
+                "es": ""
+            }
+        },
+        {
+            "code": "regeneration",
+            "name": {
+                "en": "regeneration",
+                "es": "regeneración"
+            },
+            "desc": {
+                "en": "",
+                "es": "Después de resolver un combate, si el personaje con {regeneration} no ha quedado #ko#, recupera todos sus puntos de #def# por completo."
+            }
+        }
+    ]
+}
