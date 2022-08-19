@@ -5,11 +5,7 @@
             "number": "001",
             "rarity": "common",
             "name": {
-                "es": "",
-                "en": ""
-            },
-            "subname": {
-                "es": "",
+                "es": "Base tecnológica",
                 "en": ""
             },
             "type": "base",
@@ -18,10 +14,6 @@
             "atk": 0,
             "def": 20,
             "trait": ["base"],
-            "skill": [
-                "haste",
-                "precision"
-            ],
             "special": {
                 "type": "active",
                 "cost": 0,
@@ -36,11 +28,7 @@
             "number": "002",
             "rarity": "common",
             "name": {
-                "es": "",
-                "en": ""
-            },
-            "subname": {
-                "es": "",
+                "es": "Base biológica",
                 "en": ""
             },
             "type": "base",
@@ -49,10 +37,6 @@
             "atk": 0,
             "def": 20,
             "trait": ["base"],
-            "skill": [
-                "haste",
-                "precision"
-            ],
             "special": {
                 "type": "active",
                 "cost": 0,
@@ -67,23 +51,15 @@
             "number": "003",
             "rarity": "common",
             "name": {
-                "es": "",
-                "en": ""
-            },
-            "subname": {
-                "es": "",
+                "es": "Base espectral",
                 "en": ""
             },
             "type": "base",
-            "class": "espectral",
+            "class": "spectral",
             "cost": 0,
             "atk": 0,
             "def": 20,
             "trait": ["base"],
-            "skill": [
-                "haste",
-                "precision"
-            ],
             "special": {
                 "type": "active",
                 "cost": 0,
@@ -98,11 +74,7 @@
             "number": "004",
             "rarity": "common",
             "name": {
-                "es": "",
-                "en": ""
-            },
-            "subname": {
-                "es": "",
+                "es": "Base dimensional",
                 "en": ""
             },
             "type": "base",
@@ -111,10 +83,6 @@
             "atk": 0,
             "def": 20,
             "trait": ["base"],
-            "skill": [
-                "haste",
-                "precision"
-            ],
             "special": {
                 "type": "active",
                 "cost": 0,
@@ -129,44 +97,273 @@
             "number": "005",
             "rarity": "common",
             "name": {
-                "es": "",
-                "en": ""
-            },
-            "subname": {
-                "es": "",
-                "en": ""
+                "es": "Explorador",
+                "en": "Scout"
             },
             "type": "unit",
-            "class": "technological",
-            "cost": 5,
-            "atk": 5,
-            "def": 5,
-            "trait": ["spaceship"],
+            "class": "technologic",
+            "cost": 2,
+            "atk": 2,
+            "def": 2,
+            "trait": [
+                "technologic",
+                "spaceship"
+            ],
             "skill": [
                 "haste",
                 "precision"
             ],
             "vanguard": {
                 "type": "pasive",
-                "cost": 6,
+                "cost": "2+",
                 "desc": {
-                    "es": "",
+                    "es": "Después de atacar, puede moverse a otra casilla.",
                     "en": ""
                 }
             },
             "rearguard": {
                 "type": "pasive",
-                "cost": 6,
+                "cost": "2+",
                 "desc": {
-                    "es": "",
+                    "es": "Esta nave gana {protection}.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": 6,
+                "cost": 4,
                 "desc": {
-                    "es": "",
+                    "es": "Anula {shield} de una unidad.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "006",
+            "rarity": "common",
+            "name": {
+                "es": "Aguijón",
+                "en": "Stinger"
+            },
+            "type": "unit",
+            "class": "biologic",
+            "cost": 2,
+            "atk": 3,
+            "def": 1,
+            "trait": [
+                "biologic",
+                "spaceship"
+            ],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "vanguard": {
+                "type": "pasive",
+                "cost": "3+",
+                "desc": {
+                    "es": "Esta nave gana {doublestrike}.",
+                    "en": ""
+                }
+            },
+            "rearguard": {
+                "type": "pasive",
+                "cost": "3+",
+                "desc": {
+                    "es": "Esta nave gana {firstattack}.",
+                    "en": ""
+                }
+            },
+            "flash": {
+                "type": "active",
+                "cost": 5,
+                "desc": {
+                    "es": "Otorga a una unidad {critical}.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "007",
+            "rarity": "common",
+            "name": {
+                "es": "Fanstama",
+                "en": "Ghost"
+            },
+            "type": "unit",
+            "class": "spectral",
+            "cost": 2,
+            "atk": 1,
+            "def": 3,
+            "trait": [
+                "spectral",
+                "spaceship"
+            ],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "vanguard": {
+                "type": "active",
+                "cost": "3+",
+                "desc": {
+                    "es": "Cuando ataca, gana +2 #atk#. Destruye esta nave.",
+                    "en": ""
+                }
+            },
+            "rearguard": {
+                "type": "pasive",
+                "cost": 2,
+                "desc": {
+                    "es": "Esta nave gana {shield}.",
+                    "en": ""
+                }
+            },
+            "flash": {
+                "type": "active",
+                "cost": "5+",
+                "desc": {
+                    "es": "Otorga a una unidad {indestructible}.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "008",
+            "rarity": "common",
+            "name": {
+                "es": "Viper",
+                "en": "Víbora"
+            },
+            "type": "unit",
+            "class": "dimensional",
+            "cost": 2,
+            "atk": 2,
+            "def": 2,
+            "trait": [
+                "dimensional",
+                "spaceship"
+            ],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "vanguard": {
+                "type": "pasive",
+                "cost": "3+",
+                "desc": {
+                    "es": "Esta nave gana {doublestrike}.",
+                    "en": ""
+                }
+            },
+            "rearguard": {
+                "type": "pasive",
+                "cost": "3+",
+                "desc": {
+                    "es": "Esta nave gana {firstattack}.",
+                    "en": ""
+                }
+            },
+            "flash": {
+                "type": "active",
+                "cost": 5,
+                "desc": {
+                    "es": "Otorga a una unidad {critical}.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "009",
+            "rarity": "common",
+            "name": {
+                "es": "Ancient",
+                "en": "Ancient"
+            },
+            "type": "unit",
+            "class": "biologic",
+            "cost": 3,
+            "atk": 2,
+            "def": 4,
+            "trait": [
+                "biologic",
+                "spaceship"
+            ],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "vanguard": {
+                "type": "pasive",
+                "cost": "2+",
+                "desc": {
+                    "es": "Esta nave gana {redirection}.",
+                    "en": ""
+                }
+            },
+            "rearguard": {
+                "type": "pasive",
+                "cost": "4+",
+                "desc": {
+                    "es": "Esta nave gana {repair}.",
+                    "en": ""
+                }
+            },
+            "flash": {
+                "type": "active",
+                "cost": "6+",
+                "desc": {
+                    "es": "Otorga a una unidad {repair}.",
+                    "en": ""
+                }
+            }
+        },
+        {
+            "set": "cb",
+            "number": "010",
+            "rarity": "common",
+            "name": {
+                "es": "Bestiure",
+                "en": "Bestiure"
+            },
+            "type": "unit",
+            "class": "dimensional",
+            "cost": 3,
+            "atk": 3,
+            "def": 4,
+            "trait": [
+                "dimensional",
+                "spaceship"
+            ],
+            "skill": [
+                "haste",
+                "precision"
+            ],
+            "vanguard": {
+                "type": "pasive",
+                "cost": "3+",
+                "desc": {
+                    "es": "Esta nave gana {reflection}.",
+                    "en": ""
+                }
+            },
+            "rearguard": {
+                "type": "pasive",
+                "cost": "3+",
+                "desc": {
+                    "es": "Esta nave gana {precision}.",
+                    "en": ""
+                }
+            },
+            "flash": {
+                "type": "active",
+                "cost": "6+",
+                "desc": {
+                    "es": "Puedes desplegar una unidad extra este turno. Esa unidad gana {haste}.",
                     "en": ""
                 }
             }

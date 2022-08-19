@@ -19,7 +19,18 @@
             },
             "desc": {
                 "en": "",
-                "es": "Las cartas de vida robadas con un golpe crítico no van a la mano, van a la zona de #ko#."
+                "es": "Si una unidad recibe daño en el casco de un ataque {critical}, está queda destruida inmediatamente."
+            }
+        },
+        {
+            "code": "protection",
+            "name": {
+                "en": "protection",
+                "es": "protección"
+            },
+            "desc": {
+                "en": "",
+                "es": "Una unidad con protección recibe el ataque realizado en otra unidad en su misma línea."
             }
         },
         {
@@ -37,11 +48,22 @@
             "code": "doublestrike",
             "name": {
                 "en": "double strike",
-                "es": "golpea dos veces"
+                "es": "doble ataque"
             },
             "desc": {
                 "en": "",
-                "es": "El personaje realiza 2 ataques completos, resolviendo toda la fase de combate 2 veces."
+                "es": "La unidad realiza 2 ataques completos, resolviendo toda la fase de combate 2 veces. Los ataques pueden realizarse a cualquier objetivo válido."
+            }
+        },
+        {
+            "code": "triplestrike",
+            "name": {
+                "en": "triple strike",
+                "es": "triple ataque"
+            },
+            "desc": {
+                "en": "",
+                "es": "La unidad realiza 3 ataques completos, resolviendo toda la fase de combate 2 veces. Los ataques pueden realizarse a cualquier objetivo válido."
             }
         },
         {
@@ -52,7 +74,7 @@
             },
             "desc": {
                 "en": "",
-                "es": "El personaje con {block} toma el relevo del personaje original atacado, aunque no esté en su misma línea. El nuevo objetivo hay que declararlo antes de pasar a la fase de combate."
+                "es": "La unidad con {block} toma el relevo de la unidad original atacada, aunque no esté en su misma línea. El nuevo objetivo hay que declararlo antes de pasar a la fase de combate."
             }
         },
         {
@@ -64,17 +86,6 @@
             "desc": {
                 "en": "",
                 "es": ""
-            }
-        },
-        {
-            "code": "fly",
-            "name": {
-                "en": "fly",
-                "es": "volar"
-            },
-            "desc": {
-                "en": "",
-                "es": "Un personaje con {fly} puede atacar a los personajes de retaguardia aunque haya personajes en la vanguardia."
             }
         },
         {
@@ -96,7 +107,7 @@
             },
             "desc": {
                 "en": "",
-                "es": "Un personaje con {reach} defiende los ataques de personajes con {fly} estando en vanguardia."
+                "es": "Una unidad con {reach} puede atacar a las unidades de retaguardia aunque haya unidades en la vanguardia."
             }
         },
         {
@@ -107,7 +118,7 @@
             },
             "desc": {
                 "en": "",
-                "es": "Un personaje con {haste} puede atacar el mismo turno en el que entra en juego."
+                "es": "Una unidad con {haste} puede atacar el mismo turno en el que entra en juego."
             }
         },
         {
@@ -151,7 +162,7 @@
             },
             "desc": {
                 "en": "",
-                "es": ""
+                "es": "Cuando una unidad con {trample} realiza un ataque, el daño sobrante de ese ataque pasa al siguiente objetivo válido de su misma línea."
             }
         },
         {
@@ -185,6 +196,39 @@
             "desc": {
                 "en": "",
                 "es": "Después de resolver un combate, si el personaje con {regeneration} no ha quedado #ko#, recupera todos sus puntos de #def# por completo."
+            }
+        },
+        {
+            "code": "redirection",
+            "name": {
+                "en": "redirection",
+                "es": "redirección"
+            },
+            "desc": {
+                "en": "",
+                "es": "Redirige todo el daño que reciba una unidad a otra de su mismo equipo."
+            }
+        },
+        {
+            "code": "repair",
+            "name": {
+                "en": "repair",
+                "es": "reparación"
+            },
+            "desc": {
+                "en": "",
+                "es": "Repara todos los puntos de casco perdidos una unidad."
+            }
+        },
+        {
+            "code": "reflection",
+            "name": {
+                "en": "reflection",
+                "es": "reflejo"
+            },
+            "desc": {
+                "en": "",
+                "es": "Cuando una unidad con {reflection} es atacado, la unidad atacante recibe la misma cantidad de daño."
             }
         }
     ]

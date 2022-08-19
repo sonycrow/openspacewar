@@ -1,0 +1,241 @@
+.card-unit {
+    position: relative;
+    width: 756px;
+    height: 1050px;
+    margin: 0;
+}
+
+.card-unit div.unit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-unit div.unit-technologic {
+    background-image: url(../assets/designs/technologic.png);
+}
+
+.card-unit div.unit-biologic {
+    background-image: url(../assets/designs/biologic.png);
+}
+
+.card-unit div.unit-spectral {
+    background-image: url(../assets/designs/spectral.png);
+}
+
+.card-unit div.unit-dimensional {
+    background-image: url(../assets/designs/dimensional.png);
+}
+
+.card-unit div.art {
+    position: absolute;
+    height: 420px;
+    width: 632px;
+    top: 58px;
+    left: 62px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-unit div.credits {
+    position: absolute;
+    width: 224px;
+    left: 590px;
+    top: 758px;
+    background-position: center;
+    text-align: center;
+    transform: rotate(-90deg);
+    font-size: 16px;
+}
+
+.card-unit div {
+    color: white;
+}
+
+.card-unit div.title {
+    position: absolute;
+    top: 76px;
+    width: 756px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 10px #000, 0 0 20px #000, 0 0 20px #000;
+    font-family: 'ethnocentric', serif;
+}
+
+.card-unit div.cost,
+.card-unit div.attack,
+.card-unit div.defense {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-family: 'orbitron_b', serif;
+}
+
+.card-unit div.cost {
+    top: 58px;
+    left: 60px;
+    width: 136px;
+    height: 137px;
+    font-size: 64px;
+    line-height: 137px;
+    padding-left: 3px;
+    background-repeat: no-repeat;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff;
+}
+
+.card-unit div.cost-technologic {
+    background-image: url(../assets/elements/cost_technologic.png);
+}
+
+.card-unit div.cost-biologic {
+    background-image: url(../assets/elements/cost_biologic.png);
+}
+
+.card-unit div.cost-spectral {
+    background-image: url(../assets/elements/cost_spectral.png);
+}
+
+.card-unit div.cost-dimensional {
+    background-image: url(../assets/elements/cost_dimensional.png);
+}
+
+.card-unit div.stats {
+    position: absolute;
+    top: 95px;
+    left: 555px;
+    width: 156px;
+    height: 285px;
+    background-repeat: no-repeat;
+}
+
+.card-unit div.stats-technologic {
+    background-image: url(../assets/elements/stats_technologic.png);
+}
+
+.card-unit div.stats-biologic {
+    background-image: url(../assets/elements/stats_biologic.png);
+}
+
+.card-unit div.stats-spectral {
+    background-image: url(../assets/elements/stats_spectral.png);
+}
+
+.card-unit div.stats-dimensional {
+    background-image: url(../assets/elements/stats_dimensional.png);
+}
+
+.card-unit div.attack,
+.card-unit div.defense {
+    font-size: 76px;
+    left: 630px;
+    width: 80px;
+    height: 110px;
+    line-height: 110px;
+}
+
+.card-unit div.attack {
+    top: 124px;
+}
+
+.card-unit div.defense {
+    top: 270px;
+}
+
+.card-unit div.skill-vanguard,
+.card-unit div.skill-rearguard,
+.card-unit div.skill-flash {
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    left: 78px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'orbitron', serif;
+    font-size: 68px;
+    line-height: 146px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000;
+}
+
+.card-unit div.skill-vanguard {
+    top: 446px;
+}
+
+.card-unit div.skill-rearguard {
+    top: 600px;
+}
+
+.card-unit div.skill-flash {
+    top: 752px;
+}
+
+.card-unit div.skill-active {
+    /*background-image: url(src/assets/elements/active.png);*/
+}
+
+.card-unit div.skill-pasive {
+    /*background-image: url(src/assets/elements/pasive.png);*/
+}
+
+.card-unit div.skill-text {
+    position: absolute;
+    width: 440px;
+    height: 124px;
+    left: 238px;
+    display: table;
+}
+
+.card-unit div.skill-text div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card-unit div.skill-text div div {
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 30px;
+    color: black;
+    text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
+    font-family: 'orbitron', serif;
+}
+
+.card-unit div.skill-text-vanguard {
+    top: 466px;
+}
+
+.card-unit div.skill-text-rearguard {
+    top: 620px;
+}
+
+.card-unit div.skill-text-flash {
+    top: 774px;
+}
+
+.card-unit div.skills-traits {
+    position: absolute;
+    width: 650px;
+    left: 60px;
+}
+
+.card-unit div.skills {
+    top: 914px;
+}
+
+.card-unit div.traits {
+    top: 952px;
+}
+
+.card-unit div.cardnumber {
+    position: absolute;
+    top: 982px;
+    width: 690px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: right;
+    text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
+    color: black;
+    white-space: nowrap;
+    font-family: 'orbitron_b', serif;
+}

@@ -4,22 +4,20 @@ declare(strict_types=1);
 class Index extends SectionController
 {
     private string $lang;
-    private array $codex;
 
+    private array $codex;
     private array $skills;
     private array $traits;
-    private array $cardskills;
 
     function __construct(string $name)
     {
         parent::__construct($name);
 
         $this->lang  = $_REQUEST['lang'] ?? "es";
-        $this->codex = json_decode(file_get_contents(ROOT . "/src/storage/openheroestcg_cards_complete.json"), true);
 
-        $this->skills     = json_decode(file_get_contents(ROOT . "/src/storage/openheroestcg_skills.json"), true);
-        $this->traits     = json_decode(file_get_contents(ROOT . "/src/storage/openheroestcg_traits.json"), true);
-        $this->cardskills = json_decode(file_get_contents(ROOT . "/src/storage/openheroestcg_card_skills.json"), true);
+        $this->codex  = json_decode(file_get_contents(ROOT . "/src/storage/osw_codex.json"), true);
+        $this->skills = json_decode(file_get_contents(ROOT . "/src/storage/osw_skills.json"), true);
+        $this->traits = json_decode(file_get_contents(ROOT . "/src/storage/osw_traits.json"), true);
     }
 
     public function getRenderVars(): array
@@ -35,16 +33,25 @@ class Index extends SectionController
         $count = 1;
         $codexTranslated = array();
 
-        foreach ($this->codex["card"] as $card) {
-            $card["s1"]["desc"][$this->lang] = $this->translate($card["s1"]["desc"][$this->lang]);
-            $card["s2"]["desc"][$this->lang] = $this->translate($card["s2"]["desc"][$this->lang]);
-            $card["s3"]["desc"][$this->lang] = $this->translate($card["s3"]["desc"][$this->lang]);
+        foreach ($this->codex["card"] as $card)
+        {
+            if ($card["type"] != "unit") continue;
+            if ($card['number'] != "010") continue;
 
-            foreach ($card["skill"] as &$skill) {
-                 $skill = str_replace(" ", "&nbsp;", $this->getSkillDesc($skill, $this->lang));
+            $card["vanguard"]["desc"][$this->lang] = $this->translate($card["vanguard"]["desc"][$this->lang]);
+            $card["rearguard"]["desc"][$this->lang] = $this->translate($card["rearguard"]["desc"][$this->lang]);
+            $card["flash"]["desc"][$this->lang] = $this->translate($card["flash"]["desc"][$this->lang]);
+
+            if ($card["skill"]) {
+                foreach ($card["skill"] as &$skill) {
+                    $skill = str_replace(" ", "&nbsp;", $this->getSkillDesc($skill, $this->lang));
+                }
             }
-            foreach ($card["trait"] as &$trait) {
-                $trait = str_replace(" ", "&nbsp;", $this->getTraitDesc($trait, $this->lang));
+
+            if ($card["trait"]) {
+                foreach ($card["trait"] as &$trait) {
+                    $trait = str_replace(" ", "&nbsp;", $this->getTraitDesc($trait, $this->lang));
+                }
             }
 
             $codexTranslated[] = $card;
@@ -54,7 +61,6 @@ class Index extends SectionController
 
         return array("card" => $codexTranslated);
     }
-
 
     private function translate($text): string
     {

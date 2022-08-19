@@ -1,0 +1,39 @@
+<div class="card card-unit flex" data-number="{{ card.number }}">
+    <div class="template justify-center">
+
+        <div class="unit unit-{{ card.class }}"></div>
+        <div class="art" style="background-image: url('./art/{{ card.set }}/{{ card.set ~ card.number }}.png');"></div>
+
+        <div class="cost cost-{{ card.class }}">{{ card.cost}}</div>
+        <div class="stats stats-{{ card.class }}"></div>
+
+        <div class="attack">{{ card.atk }}</div>
+        <div class="defense">{{ card.def }}</div>
+
+        <div class="title">{{ attribute(card.name, lang) }}</div>
+
+        <div class="skill-vanguard skill-{{ card.vanguard.type }}">{{ card.vanguard.cost }}</div>
+        <div class="skill-rearguard skill-{{ card.rearguard.type }}">{{ card.rearguard.cost }}</div>
+        <div class="skill-flash skill-{{ card.flash.type }}">{{ card.flash.cost }}</div>
+
+        <div class="skill-text skill-text-vanguard"><div><div>{{ attribute(card.vanguard.desc, lang) }}</div></div></div>
+        <div class="skill-text skill-text-rearguard"><div><div>{{ attribute(card.rearguard.desc, lang) }}</div></div></div>
+        <div class="skill-text skill-text-flash"><div><div>{{ attribute(card.flash.desc, lang) }}</div></div></div>
+
+        <div class="skills-traits skills">
+            {% for skill in card.skill %}
+                {{ '{' ~ skill ~ '}' }}
+            {% endfor %}
+        </div>
+
+        <div class="skills-traits traits">
+            {% for trait in card.trait %}
+                {{ '[' ~ trait ~ ']' }}
+            {% endfor %}
+        </div>
+
+        <div class="credits"></div>
+        <div class="cardnumber">{{ card.set ~ card.number ~ '.' ~ lang ~ '.' ~ card.rarity|first }}</div>
+
+    </div>
+</div>

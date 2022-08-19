@@ -7,47 +7,18 @@
 </head>
 <body>
 
+    <!-- Cartas en HTML -->
     {% for card in codex.card %}
 
-        <!-- Containers -->
-        <div class="card flex" data-number="{{ card.number }}" style="background-image: url('./arts/{{ card.set }}/{{ card.set ~ card.number }}.jpg');">
-        <div class="template justify-center">
+        <!-- Tipo base -->
+        {% if card.type == 'base' %}
+            {% include 'cardtype/base.html.twig' %}
+        {% endif %}
 
-        <div class="elements{{ card.class == 'mystic' ? '-nr' : null }}"></div>
-        <div class="cost">{{ card.cost}}</div>
-        <div class="costrequired costrequired-{{ card.class }}"></div>
-        <div class="class class-{{ card.class }}"></div>
-
-        <div class="title">{{ attribute(card.name, lang) }}</div>
-        <div class="subtitle">{{ attribute(card.subname, lang) }}</div>
-
-        <div class="attack">{{ card.atk }}</div>
-        <div class="defense">{{ card.def }}</div>
-
-        <div class="cardnumber">{{ card.set ~ '.' ~ card.number ~ '.' ~ lang ~ '.' ~ card.rarity|first }}</div>
-
-        <div class="skill-vanguard skill-{{ card.s1.type }}"></div>
-        <div class="skill-rearguard skill-{{ card.s2.type }}"></div>
-        <div class="skill-special skill-{{ card.s3.type }}"></div>
-
-        <div class="skill-text skill-text-vanguard"><div><div>{{ attribute(card.s1.desc, lang) }}</div></div></div>
-        <div class="skill-text skill-text-rearguard"><div><div>{{ attribute(card.s2.desc, lang) }}</div></div></div>
-        <div class="skill-text skill-text-special"><div><div>{{ attribute(card.s3.desc, lang) }}</div></div></div>
-
-        <div class="skills-traits skills">
-            {% for skill in card.skill %}
-                {{ '{' ~ skill ~ '}' }}
-            {% endfor %}
-        </div>
-
-        <div class="skills-traits traits">
-            {% for trait in card.trait %}
-                {{ '[' ~ trait ~ ']' }}
-            {% endfor %}
-        </div>
-
-        </div>
-        </div>
+        <!-- Tipo unidad -->
+        {% if card.type == 'unit' %}
+            {% include 'cardtype/unit.html.twig' %}
+        {% endif %}
 
     {% endfor %}
 

@@ -1,6 +1,41 @@
 {
     "trait": [
         {
+            "code": "technologic",
+            "name": {
+                "en": "technologic",
+                "es": "technológica"
+            }
+        },
+        {
+            "code": "biologic",
+            "name": {
+                "en": "biologic",
+                "es": "biológica"
+            }
+        },
+        {
+            "code": "spectral",
+            "name": {
+                "en": "spectral",
+                "es": "espectral"
+            }
+        },
+        {
+            "code": "dimensional",
+            "name": {
+                "en": "dimensional",
+                "es": "dimensional"
+            }
+        },
+        {
+            "code": "base",
+            "name": {
+                "en": "base",
+                "es": "base"
+            }
+        },
+        {
             "code": "spaceship",
             "name": {
                 "en": "spaceship",
