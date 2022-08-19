@@ -35,8 +35,9 @@ class Index extends SectionController
 
         foreach ($this->codex["card"] as $card)
         {
-            if ($card["type"] != "unit") continue;
-            if ($card['number'] != "010") continue;
+            if ($card["type"] != "base") continue;
+            if (intval($card['number']) < 4) continue;
+//            if (intval($card['number']) >= 20) continue;
 
             $card["vanguard"]["desc"][$this->lang] = $this->translate($card["vanguard"]["desc"][$this->lang]);
             $card["rearguard"]["desc"][$this->lang] = $this->translate($card["rearguard"]["desc"][$this->lang]);
@@ -98,7 +99,7 @@ class Index extends SectionController
     {
         foreach ($this->traits["trait"] as $trait) {
             if ($trait["code"] == $code) {
-                return $trait["name"][$lang];
+                return $code . "|" . $trait["name"][$lang];
             }
         }
 

@@ -85,18 +85,7 @@
             },
             "desc": {
                 "en": "",
-                "es": ""
-            }
-        },
-        {
-            "code": "barrier",
-            "name": {
-                "en": "barrier",
-                "es": "barrera"
-            },
-            "desc": {
-                "en": "",
-                "es": ""
+                "es": "Una unidad con {stun} no puede realizar ataques ni activar habilidades."
             }
         },
         {
@@ -129,7 +118,7 @@
             },
             "desc": {
                 "en": "",
-                "es": ""
+                "es": "Una unidad con {indestructible} no puede reducir su valor de casco en menos de 1 durante el turno."
             }
         },
         {
@@ -151,7 +140,7 @@
             },
             "desc": {
                 "en": "",
-                "es": "Los personajes atacantes están obligados a atacar al personaje con {taunt} aunque no esté en su misma línea. Si hay varios personajes con {taunt}, el atacante decide a quien dirige el ataque."
+                "es": "Las unidades atacantes están obligadas a atacar a la unidad con {taunt} aunque no esté en su misma línea. Si hay varias unidades con {taunt}, el atacante decide a quien atacar."
             }
         },
         {
@@ -173,7 +162,7 @@
             },
             "desc": {
                 "en": "",
-                "es": ""
+                "es": "Una unidad con {shield} no recibe daño durante el primer ataque que reciba durante el turno. Después de recibir cualquier ataque, pierde {shield}."
             }
         },
         {
@@ -184,7 +173,7 @@
             },
             "desc": {
                 "en": "",
-                "es": ""
+                "es": "Una unidad con {counter attack} realiza un ataque al mismo objetivo que realizo el primer ataque. El ataque se resuelve normalmente."
             }
         },
         {
@@ -229,6 +218,17 @@
             "desc": {
                 "en": "",
                 "es": "Cuando una unidad con {reflection} es atacado, la unidad atacante recibe la misma cantidad de daño."
+            }
+        },
+        {
+            "code": "fear",
+            "name": {
+                "en": "fear",
+                "es": "miedo"
+            },
+            "desc": {
+                "en": "",
+                "es": "Una unidad con {fear} no puede realizar ataques, pero si puede activar habilidades."
             }
         }
     ]

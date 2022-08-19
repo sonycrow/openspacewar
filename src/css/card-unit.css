@@ -12,19 +12,19 @@
 }
 
 .card-unit div.unit-technologic {
-    background-image: url(../assets/designs/technologic.png);
+    background-image: url(../assets/designs/unit_technologic.png);
 }
 
 .card-unit div.unit-biologic {
-    background-image: url(../assets/designs/biologic.png);
+    background-image: url(../assets/designs/unit_biologic.png);
 }
 
 .card-unit div.unit-spectral {
-    background-image: url(../assets/designs/spectral.png);
+    background-image: url(../assets/designs/unit_spectral.png);
 }
 
 .card-unit div.unit-dimensional {
-    background-image: url(../assets/designs/dimensional.png);
+    background-image: url(../assets/designs/unit_dimensional.png);
 }
 
 .card-unit div.art {
@@ -77,7 +77,7 @@
     left: 60px;
     width: 136px;
     height: 137px;
-    font-size: 64px;
+    font-size: 54px;
     line-height: 137px;
     padding-left: 3px;
     background-repeat: no-repeat;
