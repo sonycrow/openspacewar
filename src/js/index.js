@@ -2,7 +2,6 @@ import domtoimage from "dom-to-image";
 import saveAs from "file-saver";
 
 let $ = require("jquery");
-let sorted = false;
 
 window.onload = function() {
 
@@ -29,21 +28,24 @@ window.onload = function() {
     let nodes = document.getElementsByClassName('card');
     for (let node of nodes) {
         let number = node.getAttribute('data-number');
+        let cardid = node.getAttribute('data-cardid');
 
-        /*
-        domtoimage.toBlob(node)
+        // domtoimage.toBlob(node)
+        //     .then(function (blob) {
+        //         saveAs(blob, number + ".png");
+        //     });
+
+        domtoimage.toJpeg(node, { quality: 1 })
             .then(function (blob) {
-                saveAs(blob, number + ".png");
+                saveAs(blob, cardid + ".jpg");
             });
-
-        */
-        //domtoimage.toJpeg(node, { quality: 1 })
 
         // domtoimage.toPng(node)
         //     .then(function (dataUrl) {
         //         var img = new Image();
         //         img.setAttribute("id", "card" + number);
         //         img.setAttribute("data-order", number);
+        //         img.setAttribute("data-cardid", cardid);
         //         img.src = dataUrl;
         //
         //         node.remove();
@@ -55,8 +57,6 @@ window.onload = function() {
     }
 
     $('#cards').click(function() {
-        if (sorted) return;
-
         let sorted_cards,
             getSorted = function (selector, attrName) {
                 return $(

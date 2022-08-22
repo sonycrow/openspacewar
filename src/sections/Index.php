@@ -35,9 +35,14 @@ class Index extends SectionController
 
         foreach ($this->codex["card"] as $card)
         {
-            if ($card["type"] != "base") continue;
-            if (intval($card['number']) < 4) continue;
+//            if ($card["type"] != "base") continue;
+//            if (intval($card['number']) != 11) continue;
+//            if (intval($card['number']) < 4) continue;
 //            if (intval($card['number']) >= 20) continue;
+
+            if ($card['class'] != 'dimensional') continue;
+
+            $card["special"]["desc"][$this->lang] = $this->translate($card["special"]["desc"][$this->lang]);
 
             $card["vanguard"]["desc"][$this->lang] = $this->translate($card["vanguard"]["desc"][$this->lang]);
             $card["rearguard"]["desc"][$this->lang] = $this->translate($card["rearguard"]["desc"][$this->lang]);
@@ -80,6 +85,8 @@ class Index extends SectionController
             },
             $text
         );
+
+        $text = str_replace('\n', '<br/>', $text);
 
         return $text;
     }

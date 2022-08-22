@@ -1,7 +1,10 @@
-<div class="card card-base flex" data-number="{{ card.number }}">
+<div class="card card-base flex" data-cardid="{{ card.set ~ card.number ~ lang }}" data-number="{{ card.number }}">
     <div class="template justify-center">
 
         <div class="base base-{{ card.class }}"></div>
+
+        <div class="special-text special-text-{{ card.class }}"><div><div>{{ attribute(card.special.desc, lang)|raw }}</div></div></div>
+
         <div class="art" style="background-image: url('./art/{{ card.set }}/{{ card.set ~ card.number }}.png');"></div>
 
         <div class="cost cost-{{ card.class }}">{{ card.cost}}</div>
@@ -10,8 +13,6 @@
         <div class="defense">{{ card.def }}</div>
 
         <div class="title">{{ attribute(card.name, lang) }}</div>
-
-        <div class="special-text special-text-{{ card.class }}"><div><div>{{ attribute(card.special.desc, lang) }}</div></div></div>
 
         <div class="credits"></div>
         <div class="cardnumber">{{ card.set ~ card.number ~ '.' ~ lang ~ '.' ~ card.rarity|first }}</div>

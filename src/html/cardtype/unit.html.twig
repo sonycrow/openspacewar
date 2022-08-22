@@ -1,10 +1,12 @@
-<div class="card card-unit flex" data-number="{{ card.number }}">
+<div class="card card-unit flex" data-cardid="{{ card.set ~ card.number ~ lang }}" data-number="{{ card.number }}">
     <div class="template justify-center">
 
         <div class="unit unit-{{ card.class }}"></div>
-        <div class="art" style="background-image: url('./art/{{ card.set }}/{{ card.set ~ card.number }}.png');"></div>
 
         <div class="cost cost-{{ card.class }}">{{ card.cost}}</div>
+
+        <div class="art" style="background-image: url('./art/{{ card.set }}/{{ card.set ~ card.number }}.png');"></div>
+
         <div class="stats stats-{{ card.class }}"></div>
 
         <div class="attack">{{ card.atk }}</div>

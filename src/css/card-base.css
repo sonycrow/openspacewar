@@ -3,7 +3,6 @@
     width: 1050px;
     height: 756px;
     margin: 0;
-    border: 1px solid black;
 }
 
 .card-base div.base {
@@ -17,23 +16,23 @@
 }
 
 .card-base div.base-biologic {
-    /*background-image: url(../assets/designs/base_biologic.png);*/
+    background-image: url(../assets/designs/base_biologic.png);
 }
 
 .card-base div.base-spectral {
-    /*background-image: url(../assets/designs/base_spectral.png);*/
+    background-image: url(../assets/designs/base_spectral.png);
 }
 
 .card-base div.base-dimensional {
-    /*background-image: url(../assets/designs/base_dimensional.png);*/
+    background-image: url(../assets/designs/base_dimensional.png);
 }
 
 .card-base div.art {
     position: absolute;
-    height: 430px;
+    height: 480px;
     width: 820px;
     top: 66px;
-    left: 100px;
+    left: 114px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -51,11 +50,23 @@
 
 .card-base div.stats {
     position: absolute;
-    top: 127px;
-    left: 780px;
-    width: 207px;
-    height: 140px;
+    top: 71px;
+    left: 43px;
+    width: 205px;
+    height: 139px;
     background-repeat: no-repeat;
+}
+
+.card-base div.stats-biologic {
+    background-image: url(../assets/elements/base_stats_biologic.png);
+}
+
+.card-base div.stats-dimensional {
+    background-image: url(../assets/elements/base_stats_dimensional.png);
+}
+
+.card-base div.stats-spectral {
+    background-image: url(../assets/elements/base_stats_spectral.png);
 }
 
 .card-base div.stats-technologic {
@@ -64,8 +75,8 @@
 
 .card-base div.defense {
     font-size: 76px;
-    top: 157px;
-    left: 852px;
+    top: 68px;
+    left: 39px;
     width: 140px;
     height: 110px;
     line-height: 110px;
@@ -99,6 +110,18 @@
     text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
     font-family: 'orbitron', serif;
     display: inline-block;
+}
+
+.card-base div.special-text-biologic {
+    background-image: url(../assets/elements/base_special_biologic.png);
+}
+
+.card-base div.special-text-dimensional {
+    background-image: url(../assets/elements/base_special_dimensional.png);
+}
+
+.card-base div.special-text-spectral {
+    background-image: url(../assets/elements/base_special_spectral.png);
 }
 
 .card-base div.special-text-technologic {

@@ -1,2 +1,4 @@
-Technologic = terran = terricola
-Spectral = Altarian = mukay
+Biologic    = Iconian = algae
+Dimensional = Iridium = twilight
+Spectral    = Altarian = mukay
+Technologic = Terran = terricola

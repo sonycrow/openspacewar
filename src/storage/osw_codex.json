@@ -18,7 +18,7 @@
                 "type": "active",
                 "cost": 0,
                 "desc": {
-                    "es": "Durante tu turno, puedes incrementar el valor de una energía en 1.",
+                    "es": "Durante tu turno, puedes incrementar\\nel valor de una energía en 1.",
                     "en": ""
                 }
             }
@@ -64,7 +64,7 @@
                 "type": "active",
                 "cost": 0,
                 "desc": {
-                    "es": "Durante tu turno, puedes robar una carta. Si lo haces, debes descartar una carta.",
+                    "es": "Durante tu turno, puedes robar una carta.\\nSi lo haces, debes descartar una carta.",
                     "en": ""
                 }
             }
@@ -103,7 +103,7 @@
             "type": "unit",
             "class": "biologic",
             "cost": "2+",
-            "atk": 3,
+            "atk": 2,
             "def": 1,
             "trait": [
                 "biologic",
@@ -117,7 +117,7 @@
                 "type": "pasive",
                 "cost": "3+",
                 "desc": {
-                    "es": "Esta nave gana {doublestrike}.",
+                    "es": "Esta nave gana {repair}.",
                     "en": ""
                 }
             },
@@ -125,15 +125,15 @@
                 "type": "pasive",
                 "cost": "3+",
                 "desc": {
-                    "es": "Esta nave gana {firstattack}.",
+                    "es": "Recupera 2 puntos de casco de la unidad en su vanguardia.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": "4+",
+                "cost": "3+",
                 "desc": {
-                    "es": "Otorga a una unidad {critical}.",
+                    "es": "Otorga a una unidad {shield}.",
                     "en": ""
                 }
             }
@@ -150,7 +150,7 @@
             "class": "biologic",
             "cost": "3+",
             "atk": 2,
-            "def": 4,
+            "def": 3,
             "trait": [
                 "biologic",
                 "spaceship"
@@ -189,14 +189,14 @@
             "number": "012",
             "rarity": "common",
             "name": {
-                "es": "",
-                "en": ""
+                "es": "Liftree",
+                "en": "Liftree"
             },
             "type": "unit",
             "class": "biologic",
             "cost": "4+",
-            "atk": 0,
-            "def": 0,
+            "atk": 2,
+            "def": 5,
             "trait": [
                 "biologic",
                 "spaceship"
@@ -207,25 +207,25 @@
             ],
             "vanguard": {
                 "type": "pasive",
-                "cost": "0+",
+                "cost": "3+",
                 "desc": {
-                    "es": "",
+                    "es": "Los ataques de unidades [technologic] le causan la mitad (-) de daño.",
                     "en": ""
                 }
             },
             "rearguard": {
-                "type": "pasive",
-                "cost": "0+",
+                "type": "active",
+                "cost": "3+",
                 "desc": {
-                    "es": "",
+                    "es": "Recupera la mitad (+) de los puntos de casco perdidos de esta nave.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": "0+",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Intercambio los puntos de casco perdidos entre dos unidades amigas.",
                     "en": ""
                 }
             }
@@ -235,14 +235,14 @@
             "number": "013",
             "rarity": "common",
             "name": {
-                "es": "",
+                "es": "Maddium",
                 "en": ""
             },
             "type": "unit",
             "class": "biologic",
             "cost": "5+",
-            "atk": 0,
-            "def": 0,
+            "atk": 2,
+            "def": 6,
             "trait": [
                 "biologic",
                 "spaceship"
@@ -253,25 +253,25 @@
             ],
             "vanguard": {
                 "type": "pasive",
-                "cost": "0+",
+                "cost": "3+",
                 "desc": {
-                    "es": "",
+                    "es": "Esta nave gana {taunt}.",
                     "en": ""
                 }
             },
             "rearguard": {
-                "type": "pasive",
-                "cost": "0+",
+                "type": "active",
+                "cost": "3+",
                 "desc": {
-                    "es": "",
+                    "es": "Recupera 1 punto de casco de las unidades que tiene a sus lados.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": "0+",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Todo el daño que reciba la unidad objetivo se recude a la mitad (-).",
                     "en": ""
                 }
             }
@@ -281,14 +281,14 @@
             "number": "014",
             "rarity": "common",
             "name": {
-                "es": "",
+                "es": "Magissa",
                 "en": ""
             },
             "type": "unit",
             "class": "biologic",
-            "cost": "6+",
-            "atk": 0,
-            "def": 0,
+            "cost": "5+",
+            "atk": 3,
+            "def": 5,
             "trait": [
                 "biologic",
                 "spaceship"
@@ -298,26 +298,26 @@
                 "precision"
             ],
             "vanguard": {
-                "type": "pasive",
-                "cost": "0+",
+                "type": "active",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Recupera 1 punto de casco de todas las unidades amigas en vanguardia.",
                     "en": ""
                 }
             },
             "rearguard": {
-                "type": "pasive",
-                "cost": "0+",
+                "type": "active",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Recupera 1 punto de casco de todas las unidades amigas en retaguardia.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": "0+",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Recupera 1 punto de casco de todas las unidades amigas.",
                     "en": ""
                 }
             }
@@ -345,25 +345,25 @@
             ],
             "vanguard": {
                 "type": "pasive",
-                "cost": "3+",
+                "cost": "2+",
                 "desc": {
-                    "es": "Esta nave gana {doublestrike}.",
+                    "es": "Después de atacar, puedes colocar esta nave en otra casilla vacía.",
                     "en": ""
                 }
             },
             "rearguard": {
                 "type": "pasive",
-                "cost": "3+",
+                "cost": "2+",
                 "desc": {
-                    "es": "Esta nave gana {firstattack}.",
+                    "es": "Cuando esta nave recibe daño, puede moverse a otra casilla vacía.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": "5+",
+                "cost": "3+",
                 "desc": {
-                    "es": "Otorga a una unidad {critical}.",
+                    "es": "Otorga a una unidad {reflection}.",
                     "en": ""
                 }
             }
@@ -379,8 +379,8 @@
             "type": "unit",
             "class": "dimensional",
             "cost": "3+",
-            "atk": 3,
-            "def": 4,
+            "atk": 2,
+            "def": 3,
             "trait": [
                 "dimensional",
                 "spaceship"
@@ -419,14 +419,14 @@
             "number": "017",
             "rarity": "common",
             "name": {
-                "es": "",
+                "es": "Skyerfly",
                 "en": ""
             },
             "type": "unit",
             "class": "dimensional",
             "cost": "4+",
-            "atk": 0,
-            "def": 0,
+            "atk": 3,
+            "def": 3,
             "trait": [
                 "dimensional",
                 "spaceship"
@@ -437,25 +437,25 @@
             ],
             "vanguard": {
                 "type": "pasive",
-                "cost": "0+",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Cada vez que despliegues una unidad [dimensional] este turno, roba una carta.",
                     "en": ""
                 }
             },
             "rearguard": {
                 "type": "pasive",
-                "cost": "0+",
+                "cost": "5+",
                 "desc": {
-                    "es": "",
+                    "es": "Cuando esta unidad recibe daño, roba una carta.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": "0+",
+                "cost": "5+",
                 "desc": {
-                    "es": "",
+                    "es": "Roba 2 cartas.",
                     "en": ""
                 }
             }
@@ -465,14 +465,14 @@
             "number": "018",
             "rarity": "common",
             "name": {
-                "es": "",
+                "es": "Slider",
                 "en": ""
             },
             "type": "unit",
             "class": "dimensional",
             "cost": "5+",
-            "atk": 0,
-            "def": 0,
+            "atk": 3,
+            "def": 4,
             "trait": [
                 "dimensional",
                 "spaceship"
@@ -482,26 +482,26 @@
                 "precision"
             ],
             "vanguard": {
-                "type": "pasive",
-                "cost": "0+",
+                "type": "active",
+                "cost": "3+",
                 "desc": {
-                    "es": "",
+                    "es": "Esta nave intercambia su posición con otra unidad amiga [dimensional].",
                     "en": ""
                 }
             },
             "rearguard": {
                 "type": "pasive",
-                "cost": "0+",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Intercambia la posición entre dos unidades [dimensional] amigas cualquiera.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": "0+",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Puedes intercambiar la posición entre todas las unidades amigas.",
                     "en": ""
                 }
             }
@@ -511,14 +511,14 @@
             "number": "019",
             "rarity": "common",
             "name": {
-                "es": "",
+                "es": "Painker",
                 "en": ""
             },
             "type": "unit",
             "class": "dimensional",
-            "cost": "6+",
-            "atk": 0,
-            "def": 0,
+            "cost": "5+",
+            "atk": 4,
+            "def": 4,
             "trait": [
                 "dimensional",
                 "spaceship"
@@ -529,25 +529,25 @@
             ],
             "vanguard": {
                 "type": "pasive",
-                "cost": "0+",
+                "cost": "3+",
                 "desc": {
-                    "es": "",
+                    "es": "Las unidades a su lado ganan {reflection}.",
                     "en": ""
                 }
             },
             "rearguard": {
                 "type": "pasive",
-                "cost": "0+",
+                "cost": "4+",
                 "desc": {
-                    "es": "",
+                    "es": "Cuando esta unidad es destruida, vuelve a tu mano.",
                     "en": ""
                 }
             },
             "flash": {
                 "type": "active",
-                "cost": "0+",
+                "cost": "5+",
                 "desc": {
-                    "es": "",
+                    "es": "Puedes devolver una unidad de tu desguace a tu mano.",
                     "en": ""
                 }
             }
@@ -685,7 +685,7 @@
                 "type": "active",
                 "cost": "5+",
                 "desc": {
-                    "es": "Hace 5 puntos de daño a una unidad enemiga o 6 puntos si es [biologic].",
+                    "es": "Hace 5 puntos de daño a una unidad enemiga o 8 puntos si es [dimensional].",
                     "en": ""
                 }
             }
