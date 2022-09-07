@@ -34,14 +34,14 @@
             }
         },
         {
-            "code": "firstattack",
+            "code": "firstdamage",
             "name": {
-                "en": "first attack",
-                "es": "ataca primero"
+                "en": "first damage",
+                "es": "daña primero"
             },
             "desc": {
                 "en": "",
-                "es": "Una unidad con {firststrike} resuelve primero su daño de ataque durante el combate. Si el oponente no ha quedado #ko#, entonces se resuelve el daño del defensor y el resto del combate de la forma normal."
+                "es": "Una unidad con {firstdamage} resuelve primero su daño de ataque durante el combate. Si el oponente no ha sido destruido, entonces se resuelve el daño del defensor y el resto del combate de la forma normal."
             }
         },
         {
@@ -86,17 +86,6 @@
             "desc": {
                 "en": "",
                 "es": "Una unidad con {stun} no puede realizar ataques ni activar habilidades."
-            }
-        },
-        {
-            "code": "reach",
-            "name": {
-                "en": "reach",
-                "es": "alcance"
-            },
-            "desc": {
-                "en": "",
-                "es": "Una unidad con {reach} puede atacar a las unidades de retaguardia aunque haya unidades en la vanguardia."
             }
         },
         {
@@ -184,7 +173,7 @@
             },
             "desc": {
                 "en": "",
-                "es": "Después de resolver un combate, si el personaje con {regeneration} no ha quedado #ko#, recupera todos sus puntos de #def# por completo."
+                "es": "Una unidad con {regeneration}, recupera todos los puntos de casco perdidos al final del turno."
             }
         },
         {
@@ -206,7 +195,7 @@
             },
             "desc": {
                 "en": "",
-                "es": "Repara todos los puntos de casco perdidos una unidad."
+                "es": "Una unidad con {repair}, recupera 1 punto de casco perdido al final del turno."
             }
         },
         {

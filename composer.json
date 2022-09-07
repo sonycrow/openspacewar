@@ -16,7 +16,8 @@
     "autoload": {
         "classmap": [
             "src/controllers",
-            "src/sections"
+            "src/sections",
+            "src/helpers"
         ]
     }
 }

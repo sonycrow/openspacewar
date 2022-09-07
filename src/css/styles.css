@@ -13,16 +13,47 @@
     src: url("../assets/fonts/orbitron_bold.otf") format("truetype");
 }
 
+#cards img {
+    width: 300px;
+    float: left;
+}
+
 .card .template {
     width: 100%;
 }
 
+.card span {
+    margin-right: 5px;
+}
+
 .card span.skill,
 .card span.trait {
-    text-transform: uppercase;
     font-size: 20px;
     border: 4px solid black;
     border-radius: 8px;
+}
+
+.card span.trait {
+    border: 4px solid rgb(210,210,210);
+}
+
+.card span.atk,
+.card span.def {
+    background-size: auto;
+}
+
+td.cost {
+    font-family: 'orbitron_b', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+span.skill,
+span.trait {
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 5px;
     color: black;
     background-color: white;
     padding: 0 5px 0 4px;
@@ -32,55 +63,48 @@
     box-shadow: none;
 }
 
-.card span.trait {
+span.trait {
     color: white;
-    border: 4px solid rgb(210,210,210);
+    border: 2px solid rgb(210,210,210);
     background-color: black;
     white-space: nowrap;
     text-shadow: none;
 }
 
-.card div.skill-text div div span.atk,
-.card div.skill-text div div span.def,
-.card div.skill-text div div span.technologic,
-.card div.skill-text div div span.biologic,
-.card div.skill-text div div span.espectral,
-.card div.skill-text div div span.dimensional {
+span.atk,
+span.def,
+span.technologic,
+span.biologic,
+span.espectral,
+span.dimensional {
     background-repeat: no-repeat;
     background-position: center;
     padding: 0 8px 0 8px;
     display: inline-block;
 }
 
-.card div.skill-text div div span.atk {
+span.atk {
     background-image: url(../assets/elements/atk.png);
+    background-size: 18px;
 }
 
-.card div.skill-text div div span.def {
+span.def {
     background-image: url(../assets/elements/def.png);
+    background-size: 18px;
 }
 
-.card div.skills-traits span {
-    margin-right: 5px;
-}
-
-.card span.trait-technologic {
+span.trait-technologic {
     border-color: rgb(210, 22, 9);
 }
 
-.card span.trait-biologic {
+span.trait-biologic {
     border-color: rgb(0, 175, 128);
 }
 
-.card span.trait-spectral {
+span.trait-spectral {
     border-color: rgb(0, 143, 200);
 }
 
-.card span.trait-dimensional {
+span.trait-dimensional {
     border-color: rgb(186, 0, 151);
-}
-
-#cards img {
-    width: 300px;
-    float: left;
 }

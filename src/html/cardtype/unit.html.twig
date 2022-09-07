@@ -2,17 +2,19 @@
     <div class="template justify-center">
 
         <div class="unit unit-{{ card.class }}"></div>
-
         <div class="cost cost-{{ card.class }}">{{ card.cost}}</div>
 
         <div class="art" style="background-image: url('./art/{{ card.set }}/{{ card.set ~ card.number }}.png');"></div>
 
         <div class="stats stats-{{ card.class }}"></div>
-
         <div class="attack">{{ card.atk }}</div>
         <div class="defense">{{ card.def }}</div>
 
         <div class="title">{{ attribute(card.name, lang) }}</div>
+
+        <div class="skill-type-vanguard skill-{{ card.class }}-{{ card.vanguard.type }}">{{ card.vanguard.type|upper }}</div>
+        <div class="skill-type-rearguard skill-{{ card.class }}-{{ card.rearguard.type }}">{{ card.rearguard.type|upper }}</div>
+        <div class="skill-type-flash skill-{{ card.class }}-{{ card.flash.type }}">{{ card.flash.type|upper }}</div>
 
         <div class="skill-vanguard skill-{{ card.vanguard.type }}">{{ card.vanguard.cost }}</div>
         <div class="skill-rearguard skill-{{ card.rearguard.type }}">{{ card.rearguard.cost }}</div>

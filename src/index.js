@@ -3,6 +3,7 @@ import "./index.css";
 
 // Javascript
 import "./js/index.js";
+import "./js/codex.js";
 
 // Custom CSS
 import "./css/styles.css";

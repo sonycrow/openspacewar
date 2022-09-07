@@ -2,16 +2,11 @@
     <div class="template justify-center">
 
         <div class="base base-{{ card.class }}"></div>
-
         <div class="special-text special-text-{{ card.class }}"><div><div>{{ attribute(card.special.desc, lang)|raw }}</div></div></div>
-
         <div class="art" style="background-image: url('./art/{{ card.set }}/{{ card.set ~ card.number }}.png');"></div>
-
         <div class="cost cost-{{ card.class }}">{{ card.cost}}</div>
         <div class="stats stats-{{ card.class }}"></div>
-
         <div class="defense">{{ card.def }}</div>
-
         <div class="title">{{ attribute(card.name, lang) }}</div>
 
         <div class="credits"></div>

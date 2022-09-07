@@ -5,6 +5,11 @@ abstract class SectionController {
 
     private string $name;
 
+    protected string $lang;
+    protected array $codex;
+    protected array $skills;
+    protected array $traits;
+
     /**
      * SectionController constructor.
      * @param string $name Nombre de la sección
@@ -12,6 +17,11 @@ abstract class SectionController {
     function __construct(string $name)
     {
         $this->name = strtolower(trim($name));
+
+        $this->lang   = $_REQUEST['lang'] ?? "es";
+        $this->codex  = json_decode(file_get_contents(ROOT . "/src/storage/osw_codex.json"), true)['card'];
+        $this->skills = json_decode(file_get_contents(ROOT . "/src/storage/osw_skills.json"), true)['skill'];
+        $this->traits = json_decode(file_get_contents(ROOT . "/src/storage/osw_traits.json"), true)['trait'];
     }
 
     /**

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-class Index extends SectionController
+class Codex extends SectionController
 {
-    public function getRenderVars(): array
+       public function getRenderVars(): array
     {
         return [
             'lang'  => $this->lang,

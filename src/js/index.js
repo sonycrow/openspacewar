@@ -1,14 +1,15 @@
+global.$ = global.jQuery = require('jquery');
+let dt   = require( 'datatables.net' );
+
 import domtoimage from "dom-to-image";
 import saveAs from "file-saver";
-
-let $ = require("jquery");
 
 window.onload = function() {
 
     let skills = document.getElementsByClassName('skill-text');
     for (let elem of skills) {
         elem.lastChild.lastChild.innerHTML = elem.lastChild.lastChild.innerHTML
-            .replaceAll(/{(.*?)}/gmi, "<span class='skill'>$1</span>")
+            .replaceAll(/{(.*?)\|(.*?)}/gmi, "<span class='skill skill-$1'>$2</span>")
             .replaceAll(/\[(.*?)\|(.*?)]/gmi, "<span class='trait trait-$1'>$2</span>")
             .replaceAll(/#atk#/gmi, "<span class='atk'>&nbsp;&nbsp;</span>")
             .replaceAll(/#def#/gmi, "<span class='def'>&nbsp;&nbsp;</span>")
@@ -21,7 +22,7 @@ window.onload = function() {
     let traits = document.getElementsByClassName('skills-traits');
     for (let elem of traits) {
         elem.innerHTML = elem.innerHTML
-            .replaceAll(/{(.*?)}/gmi, "<span class='skill'>$1</span>")
+            .replaceAll(/{(.*?)\|(.*?)}/gmi, "<span class='skill skill-$1'>$2</span>")
             .replaceAll(/\[(.*?)\|(.*?)]/gmi, "<span class='trait trait-$1'>$2</span>")
     }
 
@@ -35,10 +36,10 @@ window.onload = function() {
         //         saveAs(blob, number + ".png");
         //     });
 
-        domtoimage.toJpeg(node, { quality: 1 })
-            .then(function (blob) {
-                saveAs(blob, cardid + ".jpg");
-            });
+        // domtoimage.toJpeg(node, { quality: 1 })
+        //     .then(function (blob) {
+        //         saveAs(blob, cardid + ".jpg");
+        //     });
 
         // domtoimage.toPng(node)
         //     .then(function (dataUrl) {
@@ -68,7 +69,6 @@ window.onload = function() {
             };
 
         sorted_cards = getSorted('img', 'data-order').clone();
-
         $('#cards').html(sorted_cards);
     });
 

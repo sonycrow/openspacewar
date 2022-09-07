@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>...</title>
+</head>
+<body>
+
+    <table id="codex" class="text-gray-500" style="width: 99%;">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+            <tr>
+                <th scope="col" class="py-3">Image</th>
+                <th scope="col" class="py-3">Card</th>
+                <th scope="col" class="py-3">Name</th>
+                <th scope="col" class="py-3">Ver</th>
+                <th scope="col" class="py-3 px-2 text-center">Cost</th>
+                <th scope="col" class="py-3 px-2 text-center">Atk</th>
+                <th scope="col" class="py-3 px-2 text-center">Def</th>
+                <th scope="col" class="py-3 text-center">Type</th>
+                <th scope="col" class=""></th>
+                <th scope="col" class="py-3">Vanguard</th>
+                <th scope="col" class=""></th>
+                <th scope="col" class="py-3">Rearguard</th>
+                <th scope="col" class=""></th>
+                <th scope="col" class="py-3">Ultimate</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for card in codex.card %}
+                {% if card.type == 'unit' %}
+                    <tr class="bg-white border-b d">
+                        <th scope="row" class="py-1 px-2 text-gray-900 whitespace-nowrap">
+                            <img src="./art/{{ card.set }}/{{ card.set ~ card.number }}.png" alt=""/>
+                        </th>
+                        <td class="py-1 px-2">{{ card.set|upper ~ card.number }}</td>
+                        <td class="py-1 px-2 whitespace-nowrap">{{ attribute(card.name, lang) }}</td>
+                        <td class="py-1 px-2 text-center">v{{ card.version }}</td>
+                        <td class="py-1 px-2 cost text-center">{{ card.cost }}</td>
+                        <td class="py-1 px-2 cost text-center">{{ card.atk }}</td>
+                        <td class="py-1 px-2 cost text-center">{{ card.def }}</td>
+                        <td class="py-1 px-4 text-center skill">{{ card.classtrans }}</td>
+                        <td class="py-1 cost">{{ card.vanguard.cost }}</td>
+                        <td class="py-1 px-2 skill">{{ attribute(card.vanguard.desc, lang) }}</td>
+                        <td class="py-1 cost">{{ card.rearguard.cost }}</td>
+                        <td class="py-1 px-2 skill">{{ attribute(card.rearguard.desc, lang) }}</td>
+                        <td class="py-1 cost">{{ card.flash.cost }}</td>
+                        <td class="py-1 px-2 skill">{{ attribute(card.flash.desc, lang) }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+    <script src="./dist/app.js"></script>
+</body>
+</html>

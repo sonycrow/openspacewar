@@ -146,37 +146,86 @@
 .card-unit div.skill-rearguard,
 .card-unit div.skill-flash {
     position: absolute;
-    width: 146px;
-    height: 146px;
-    left: 78px;
+    width: 154px;
+    height: 150px;
+    left: 76px;
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'orbitron', serif;
     font-size: 68px;
-    line-height: 146px;
+    line-height: 166px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000;
+    background-image: url(../assets/elements/border_skill.png);
+}
+
+.card-unit div.skill-vanguard {
+    top: 440px;
+}
+
+.card-unit div.skill-rearguard {
+    top: 594px;
+}
+
+.card-unit div.skill-flash {
+    top: 748px;
+}
+
+.card-unit div.skill-vanguard {
+    top: 440px;
+}
+
+.card-unit div.skill-rearguard {
+    top: 594px;
+}
+
+.card-unit div.skill-flash {
+    top: 748px;
+}
+
+.card-unit div.skill-type-vanguard,
+.card-unit div.skill-type-rearguard,
+.card-unit div.skill-type-flash {
+    position: absolute;
+    left: 79px;
+    width: 144px;
+    height: 132px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    font-family: 'orbitron', serif;
+    font-size: 16px;
     text-align: center;
     color: white;
     text-shadow: 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000;
 }
 
-.card-unit div.skill-vanguard {
-    top: 446px;
+.card-unit div.skill-type-vanguard {
+    top: 457px;
 }
 
-.card-unit div.skill-rearguard {
-    top: 600px;
+.card-unit div.skill-type-rearguard {
+    top: 611px;
 }
 
-.card-unit div.skill-flash {
-    top: 752px;
+.card-unit div.skill-type-flash {
+    top: 764px;
 }
 
-.card-unit div.skill-active {
-    /*background-image: url(src/assets/elements/active.png);*/
+.card-unit div.skill-biologic-active {
+    background-image: url(../assets/elements/active_biologic.png);
 }
 
-.card-unit div.skill-pasive {
-    /*background-image: url(src/assets/elements/pasive.png);*/
+.card-unit div.skill-dimensional-active {
+    background-image: url(../assets/elements/active_dimensional.png);
+}
+
+.card-unit div.skill-spectral-active {
+    background-image: url(../assets/elements/active_spectral.png);
+}
+
+.card-unit div.skill-technologic-active {
+    background-image: url(../assets/elements/active_technologic.png);
 }
 
 .card-unit div.skill-text {
